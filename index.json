@@ -10,6 +10,14 @@
       "about": "Lachy's tower picks and round-by-round plan for Bloons TD 6, from the first round to round 80. Capri follows it whenever she plays BTD6."
     },
     {
+      "folder": "cat-ears",
+      "file": "cat-ears.capri-skin",
+      "name": "Cat Ears",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Pointed black cat ears on her head."
+    },
+    {
       "folder": "colors-bubblegum",
       "file": "colors-bubblegum.capri-mod",
       "name": "Colors: Bubblegum",
@@ -80,6 +88,14 @@
       "kind": "skin",
       "author": "Issei",
       "about": "Her hair as a galaxy: deep space with violet and pink clouds."
+    },
+    {
+      "folder": "halo",
+      "file": "halo.capri-skin",
+      "name": "Halo",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "A jagged white halo floating just above her head."
     },
     {
       "folder": "hearing-log",
