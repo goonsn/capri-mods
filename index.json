@@ -82,6 +82,22 @@
       "about": "A skin for Capri: a maid suit, for you weirdos."
     },
     {
+      "folder": "santa-hat-black",
+      "file": "santa-hat-black.capri-skin",
+      "name": "Santa Hat: Black",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "A sharp black Santa hat for her, in every pose."
+    },
+    {
+      "folder": "santa-hat-crimson",
+      "file": "santa-hat-crimson.capri-skin",
+      "name": "Santa Hat: Crimson",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "A sharp crimson Santa hat for her, in every pose."
+    },
+    {
       "folder": "sharper-ears",
       "file": "sharper-ears.capri-mod",
       "name": "Sharper Ears",
