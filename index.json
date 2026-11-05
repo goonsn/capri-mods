@@ -58,6 +58,30 @@
       "about": "Fair dice, coin flips, random numbers and picks."
     },
     {
+      "folder": "galaxy-hair-aurora",
+      "file": "galaxy-hair-aurora.capri-skin",
+      "name": "Galaxy Hair: Aurora",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Her hair as a galaxy: deep space with teal and green clouds."
+    },
+    {
+      "folder": "galaxy-hair-ember",
+      "file": "galaxy-hair-ember.capri-skin",
+      "name": "Galaxy Hair: Ember",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Her hair as a galaxy: her red melting into plum and deep space."
+    },
+    {
+      "folder": "galaxy-hair-nebula",
+      "file": "galaxy-hair-nebula.capri-skin",
+      "name": "Galaxy Hair: Nebula",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Her hair as a galaxy: deep space with violet and pink clouds."
+    },
+    {
       "folder": "hearing-log",
       "file": "hearing-log.capri-mod",
       "name": "Hearing Log",
