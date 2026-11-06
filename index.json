@@ -82,6 +82,30 @@
       "about": "Fair dice, coin flips, random numbers and picks."
     },
     {
+      "folder": "fire-blaze",
+      "file": "fire-blaze.capri-skin",
+      "name": "Fire: Blaze",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Capri on fire, in orange flames."
+    },
+    {
+      "folder": "fire-bluefire",
+      "file": "fire-bluefire.capri-skin",
+      "name": "Fire: Bluefire",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Capri on fire, in blue gas flames."
+    },
+    {
+      "folder": "fire-witchfire",
+      "file": "fire-witchfire.capri-skin",
+      "name": "Fire: Witchfire",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Capri on fire, in green witchfire."
+    },
+    {
       "folder": "frutiger-aero",
       "file": "frutiger-aero.capri-skin",
       "name": "Frutiger Aero",
@@ -194,6 +218,14 @@
       "about": "A skin for Capri: a maid suit, for you weirdos."
     },
     {
+      "folder": "neon-sign",
+      "file": "neon-sign.capri-skin",
+      "name": "Neon Sign",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Capri as a neon sign."
+    },
+    {
       "folder": "nicknames",
       "file": "nicknames.capri-code",
       "name": "Nicknames",
@@ -216,6 +248,14 @@
       "kind": "skin",
       "author": "Vocyn",
       "about": "Capri in a white plugsuit inspired by Rei Ayanami: pale blue hair, two white interface clips on her head, a red chest core, shoulder pylons with orange tops, navy limbs, green plates, black leg bands and red eyes."
+    },
+    {
+      "folder": "sakura",
+      "file": "sakura.capri-skin",
+      "name": "Sakura",
+      "kind": "skin",
+      "author": "Issei",
+      "about": "Capri in cherry blossom, head to toe."
     },
     {
       "folder": "santa-hat-black",
