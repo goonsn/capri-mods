@@ -82,6 +82,14 @@
       "about": "Capri answers to more names: Nova, Big Z and Capricorn. She still answers to Capri too."
     },
     {
+      "folder": "desktop-weather",
+      "file": "desktop-weather.capri-code",
+      "name": "Desktop Weather",
+      "kind": "code",
+      "author": "Issei",
+      "about": "Say \"make it snow\", \"rain\", \"confetti\" or \"cherry blossoms\" and it falls across your whole desktop."
+    },
+    {
       "folder": "dice-decider",
       "file": "dice-decider.capri-code",
       "name": "Dice & Decider",
