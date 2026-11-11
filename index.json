@@ -186,6 +186,14 @@
       "about": "Fair dice, coin flips, random numbers and picks."
     },
     {
+      "folder": "dice-roll-rus",
+      "file": "dice-roll-rus.capri-code",
+      "name": "Кубы и монетка",
+      "kind": "code",
+      "author": "kyltest12",
+      "about": "Бросает кубы d4, d6, d10, d12 и подбрасывает монетку по команде."
+    },
+    {
       "folder": "ember",
       "file": "ember.capri-skin",
       "name": "Ember",
@@ -536,6 +544,14 @@
       "kind": "code",
       "author": "Vocyn",
       "about": "Give Capri new names just by asking, out loud or in chat. She answers to them straight away and remembers them."
+    },
+    {
+      "folder": "nova-angel",
+      "file": "nova-angel.capri-skin",
+      "name": "Nova - Angel",
+      "kind": "skin",
+      "author": "Chilled (chillteas on discord)",
+      "about": "A skin for Capri: an angel with soft wings and a halo, in whatever colour you like. AI generated, moves just as Capri does."
     },
     {
       "folder": "outfit-schedule",
