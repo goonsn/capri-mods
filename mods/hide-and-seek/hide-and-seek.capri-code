@@ -109,16 +109,23 @@ public class HideAndSeek : ICapriMod
         // never the same spot twice in a row, when there's anywhere else
         if (spots.Count > 1) spots.RemoveAll(s => s[0] == lastSpot);
         string[] pick = spots[Pick(spots.Count)];
-        spot = pick[0]; kind = pick[1]; side = pick[2];
-        lastSpot = spot;
         if (hard)
         {
             sizeBefore = capri.Settings.Size;
             capri.Settings.Size = Math.Max(60, sizeBefore / 2);
         }
-        if (kind == "window") capri.Her.SitOn(pick[3]);
-        else if (kind == "taskbar") capri.Her.SitOn("taskbar");
-        else capri.Her.MoveTo(new Point(int.Parse(pick[3], CultureInfo.InvariantCulture), int.Parse(pick[4], CultureInfo.InvariantCulture)));
+        if (pick[1] == "window" || pick[1] == "taskbar")
+        {
+            string sat = capri.Her.SitOn(pick[1] == "window" ? pick[3] : "taskbar");
+            if (sat == null || !sat.StartsWith("Sitting on", StringComparison.Ordinal) && !sat.StartsWith("Already sitting on", StringComparison.Ordinal))
+            {
+                List<string[]> corners = spots.FindAll(s => s[1] == "corner");
+                pick = corners[Pick(corners.Count)];
+            }
+        }
+        spot = pick[0]; kind = pick[1]; side = pick[2];
+        lastSpot = spot;
+        if (kind != "window" && kind != "taskbar") capri.Her.MoveTo(new Point(int.Parse(pick[3], CultureInfo.InvariantCulture), int.Parse(pick[4], CultureInfo.InvariantCulture)));
         hidden = true;
         since = Clock();
         timers.Add(capri.Timers.After(30, delegate { if (hidden) capri.Sound("hop"); }));

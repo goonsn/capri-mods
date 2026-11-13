@@ -193,7 +193,6 @@ public class Soundboard : ICapriMod
         if (want.Length == 0) return null;
         foreach (Sound s in sounds) if (Squash(s.Name) == want) return s;
         foreach (Sound s in sounds) if (want.Length >= 3 && Squash(s.Name).Contains(want)) return s;
-        foreach (Sound s in sounds) if (Squash(s.Name).Length >= 3 && want.Contains(Squash(s.Name))) return s;
         return null;
     }
 

@@ -118,6 +118,8 @@ public class OutfitSchedule : ICapriMod
         else if ((m = Wear.Match(said)).Success) { what = m.Groups[1].Value; when = m.Groups[2].Value; }
         else return false;
 
+        string id = own ? null : FindSkin(what);
+        if (!own && id == null) return false;
         Rule rule = When(when);
         if (rule == null)
         {
@@ -128,8 +130,6 @@ public class OutfitSchedule : ICapriMod
         if (own) rule.Skin = "none";
         else
         {
-            string id = FindSkin(what);
-            if (id == null) { capri.Say("I don't have a skin called " + what.Trim() + "."); return true; }
             if (capri.Skins.IsAccessory(id)) rule.Accessory = id; else rule.Skin = id;
         }
         Add(rule);
