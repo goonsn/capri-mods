@@ -1,7 +1,7 @@
 // capri-mod: 1
 // id: focus-mode
 // name: Focus Mode
-// version: 1.0.0
+// version: 1.0.1
 // author: Issei
 // description: Say "focus" for work-and-break rounds. She sits quietly while you work, calls your breaks, pauses when you walk away and keeps your daily count.
 // permissions: chat, settings, system, hotkeys
@@ -261,6 +261,20 @@ public class FocusMode : ICapriMod
         int total = (int)Math.Round(minutesThisSession);
         if (total < 1) Say("Focus off. Nothing counted that time.");
         else Say("Focus off. " + Plural(total, "minute") + " of work, " + Plural(doneThisSession, "full round") + ". " + Today());
+        // Four rounds or more in one go earns a finger heart, where this Capri has it.
+        if (doneThisSession >= 4) Heart();
+    }
+
+    // Her finger heart, new in Capri 0.9.0. False on an older Capri, or when her Motion setting is off and she says no,
+    // so the caller can do what it did before.
+    private bool Heart()
+    {
+        Version running;
+        try { running = new Version(capri.CapriVersion); }
+        catch (Exception) { return false; }
+        if (running < new Version(0, 9, 0)) return false;
+        string said = capri.Her.Animate("heart") ?? "";
+        return said.Length > 0 && !said.StartsWith("I ", StringComparison.Ordinal) && !said.StartsWith("My ", StringComparison.Ordinal);
     }
 
     private void Toggle()
